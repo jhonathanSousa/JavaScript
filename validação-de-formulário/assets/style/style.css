@@ -1,0 +1,61 @@
+/* Css Reset */
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}*
+
+body{
+	background-color: #e44332;
+	font-family: open sans;
+}
+
+/* Formatação do formulaário de contato */
+
+.form-contato{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	width: 30%;
+	height: auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.4);	
+}
+
+.input-padrao{
+	margin: 8px 0;
+	padding: 10px 10px;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.btn-enviar{
+	padding: 10px 25px;
+	border: none;
+	border-radius: 3px;
+	background-color: #e44332;
+	color: #fff;
+}
+
+#msg-nome,
+#msg-email,
+#msg-telefone{
+	color: #ff0000;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.invalido{
+	border: 1px solid #ff0000;
+}
+
+/* Media query criada para alterar largura do formulário em telas menores */
+@media (max-width: 667px){.container{width: 80%;}}
+@media (min-width: 668px) and (max-width: 1200px){.container{width: 50%;}}

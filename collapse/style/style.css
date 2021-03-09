@@ -1,0 +1,44 @@
+/* Css Reset */
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: open sans , sans-serif}*
+
+body{
+	background-color: #eee;
+}
+
+.collapse{
+	width: 50%;
+	margin: 10% auto;
+}
+
+.sobre{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5% 1.5%;
+	background-color: orange;
+}
+
+.sobre__titulo{
+	color: #fff;
+}
+
+.icon{
+	color: #fff;
+	transition: 0.5s;
+}
+
+.sobre-texto{
+	display: none;
+	background-color: #adadad;
+	padding: 10px;
+}
+
+.open{
+	display: block;
+}
+
+.change-icon{
+	transform:  rotate(180deg);
+	transition: 0.5s;
+}

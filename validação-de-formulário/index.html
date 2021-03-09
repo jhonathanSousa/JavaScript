@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Validação de formulário com JavaScript</title>
+	<!-- Link de estilo -->
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+</head>
+<body>
+
+
+
+	<form class="form-contato" id="contato">
+
+		<div class="container">
+
+			<!-- Campo de entrada nome -->
+			<label for="nome">Nome :</label>
+			<input type="text" name="nome" class="input-padrao">
+			<span id="msg-nome"></span>
+
+			<!-- Campo de entrada email -->
+			<label for="email">E-mail :</label>
+			<input type="email" name="email" class="input-padrao">
+			<span id="msg-email"></span>
+
+			<!-- Campo de entrada telefone -->
+			<label for="telefone">Telefone :</label>
+			<input type="phone" name="telefone" maxlength="11" class="input-padrao">
+			<span id="msg-telefone"></span>
+
+			<!-- Campo de entrada mensagem -->
+			<label for="mensagem">Mensagem :</label>
+			<textarea id="mensagem" rows="5" class="input-padrao"></textarea>
+
+			<input type="button" id="btn-enviar"  class="btn-enviar" value="Enviar">
+
+		</div>
+
+	</form>
+
+	<!-- Script de validação de formulário de contato -->
+	<script src="assets/script/validacao.js"></script>
+</body>
+</html>
